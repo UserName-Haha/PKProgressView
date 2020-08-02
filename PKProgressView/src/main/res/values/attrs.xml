@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PKProgressView">
+        <!--中间进度指示Icon-->
+        <attr name="indicatorIcon" format="reference" />
+        <!--最小宽度比值-->
+        <attr name="minWidthRatio" format="float" />
+        <!--文字大小-->
+        <attr name="showTextSize" format="integer" />
+    </declare-styleable>
+
+
+</resources>
