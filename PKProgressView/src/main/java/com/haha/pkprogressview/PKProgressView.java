@@ -82,6 +82,10 @@ public class PKProgressView extends View {
         drawablePaint.setFilterBitmap(true);
     }
 
+    public void addLeft(int leftNum) {
+        addLeft(BigInteger.valueOf(leftNum));
+    }
+
     /**
      * 左边添加
      *
@@ -90,6 +94,10 @@ public class PKProgressView extends View {
     public void addLeft(BigInteger leftNum) {
         BigInteger mTempLeftNum = mLeftNum.add(leftNum);
         setLeftNum(mTempLeftNum);
+    }
+
+    public void addRight(int rightNum) {
+        addRight(BigInteger.valueOf(rightNum));
     }
 
     /**
@@ -102,6 +110,10 @@ public class PKProgressView extends View {
         setRightNum(mTempRightNum);
     }
 
+    public void subtractLeft(int leftNum) {
+        subtractLeft(BigInteger.valueOf(leftNum));
+    }
+
     /**
      * 左边减去
      */
@@ -109,6 +121,10 @@ public class PKProgressView extends View {
         if (leftNum.compareTo(mLeftNum) == 1) return;//减去的值大于当前值则return
         BigInteger mTempLeft = mLeftNum.subtract(leftNum);
         setLeftNum(mTempLeft);
+    }
+
+    public void subtractRight(int rightNum) {
+        subtractRight(BigInteger.valueOf(rightNum));
     }
 
     /**
