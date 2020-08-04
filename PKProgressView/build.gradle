@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.PKProgressView'
+group='com.github.UserName-Haha'
 
 android {
     compileSdkVersion 29
